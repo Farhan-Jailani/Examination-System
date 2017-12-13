@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "exam")
+@Table(name = "exm_examdetials")
 public class Exam {
 	public Exam() {
 		super();
@@ -16,20 +16,20 @@ public class Exam {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
-	@Column(name = "exam_Id")
+	@Column(name = "examid")
 	private int examId;
 
 	@Column(name = "name")
 	private String name;
 
-	@Column(name = "passMark")
+	@Column(name = "passmark")
 	private int passMark;
 
-	@Column(name = "startTime")
-	private String startTime;
+	@Column(name = "startdate")
+	private String startDate;
 
-	@Column(name = "endTime")
-	private String endTime;
+	@Column(name = "enddate")
+	private String endDate;
 
 	public int getExamId() {
 		return examId;
@@ -55,20 +55,20 @@ public class Exam {
 		this.passMark = passMark;
 	}
 
-	public String getStartTime() {
-		return startTime;
+	public String getStartDate() {
+		return startDate;
 	}
 
-	public void setStartTime(String startTime) {
-		this.startTime = startTime;
+	public void setStartDate(String startTime) {
+		this.startDate = startTime;
 	}
 
-	public String getEndTime() {
-		return endTime;
+	public String getEndDate() {
+		return endDate;
 	}
 
-	public void setEndTime(String endTime) {
-		this.endTime = endTime;
+	public void setEndDate(String endTime) {
+		this.endDate = endTime;
 	}
 
 }
