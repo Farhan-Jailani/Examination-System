@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Register")
+@Table(name = "exm_register")
 public class ExamRegister {
 	public ExamRegister() {
 		super();
@@ -14,7 +14,7 @@ public class ExamRegister {
 	@Column(name = "userid")
 	private int userId;
 
-	@Column(name = "eid")
+	@Column(name = "examid")
 	private int examId;
 
 	public int getUserId() {
