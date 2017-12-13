@@ -5,23 +5,23 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "AnswerDatabase")
+@Table(name = "exm_answerdatabase")
 public class UserAnswerDatabase {
 	public UserAnswerDatabase() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	@Column(name = "eid")
+	@Column(name = "examid")
 	private int examId;
 
-	@Column(name = "qid")
+	@Column(name = "questionid")
 	private int questionId;
 
 	@Column(name = "userid")
 	private int userId;
 
-	@Column(name = "uanswer")
+	@Column(name = "useranswer")
 	private int userAnswer;
 
 	@Column(name = "answer")
