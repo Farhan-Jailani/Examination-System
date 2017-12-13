@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Choices")
+@Table(name = "exm_choices")
 public class QuestionChoices {
 	public QuestionChoices() {
 		super();
@@ -16,10 +16,10 @@ public class QuestionChoices {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
-	@Column(name = "cid")
+	@Column(name = "choiceid")
 	private int choiceId;
 
-	@Column(name = "qid")
+	@Column(name = "questionid")
 	private int questionId;
 
 	@Column(name = "choice")
