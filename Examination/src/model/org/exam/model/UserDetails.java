@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "userdetails")
+@Table(name = "exm_userdetails")
 public class UserDetails {
 	public UserDetails() {
 		super();
