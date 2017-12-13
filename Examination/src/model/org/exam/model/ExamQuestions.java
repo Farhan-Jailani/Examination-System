@@ -5,16 +5,16 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "ExamQuestions")
+@Table(name = "exm_examquestions")
 public class ExamQuestions {
 	public ExamQuestions() {
 		super();
 	}
 
-	@Column(name = "examId")
+	@Column(name = "examid")
 	private int examId;
 
-	@Column(name = "questionId")
+	@Column(name = "questionid")
 	private int questionId;
 
 	public int getExamId() {
