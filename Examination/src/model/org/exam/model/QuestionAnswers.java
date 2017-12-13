@@ -3,12 +3,12 @@ package org.exam.model;
 import javax.persistence.Column;
 import javax.persistence.Table;
 
-@Table(name = "question_answers")
+@Table(name = "exm_questionanswers")
 public class QuestionAnswers {
-	@Column(name = "qid")
+	@Column(name = "questionid")
 	private int questionId;
 
-	@Column(name = "cid")
+	@Column(name = "choiceid")
 	private int choiceId;
 
 	public int getQuestionId() {
